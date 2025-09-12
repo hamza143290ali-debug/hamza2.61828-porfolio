@@ -32,8 +32,9 @@ body{
         margin-top:100px; 
     }
     .second{
+        position:relative; 
         flex-direction:column; 
-        margin-top:300px; 
+        margin-top:300px;  
     }
 }
 .first{
@@ -83,3 +84,4 @@ body{
      border:2px solid yellow; 
 
 }
+
