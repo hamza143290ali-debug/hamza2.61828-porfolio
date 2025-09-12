@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>potfolio website</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!-- This was a header section -->
+    <header>
+        <nav id="navbar">
+            <div class="logo">Craptic</div>
+            <div class="foritems">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="./about project/about.html">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul> 
+            </div>
+            <!-- This is inside navbar used for bg color changer  -->
+            <div class="colorChanger">
+                    <div id="white" class="boxes"></div>
+                    <div id="bangan" class="boxes"></div>
+                    <div id="yellow" class="boxes"></div>
+                </div>
+        </nav>
+    </header>
+    <!-- main section -->
+     <main>
+        <!-- first section -->
+        <section class="first-section">
+            <div class="left">
+                <div class="text">Hi i am <span style="color:rgb(177, 14, 177)">Hamza Ali</span></div>
+                <div class="text" >I have a lot of skills such as:</div>
+                <!-- Element to contain animated typing -->
+                            <span id="element"></span>
+                            <div class="social-btn">
+                                <span id="facebook"><a href="#"><i style="color:rgb(24, 119, 242)" class="fa-brands fa-facebook-f "></i></a></span>
+                                <span id="youtube"><a href="#"><i style="color:rgb(255, 0, 0)" class="fa-brands fa-youtube"></i></a></span>
+                                <span id="twitter"><a href="#"><i style="color:rgb(29, 161, 242)" class="fa-brands fa-twitter"></i></a></span>
+                                  <span id="instagram"><a href="#"><i style="color:rgb(255, 0, 0)" class="fa-brands fa-instagram"></i></a></span>
+                            </div>
+            </div>
+            <div class="right">
+                <img src="hamza.jpg">
+                 <div class="rotate"></div>
+            </div>
+        </section>
+        <hr id="horizontal">
+
+        <!-- second section about my interest-->
+
+     </main>
+
+ 
+  
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['sql', 'HTML', 'CSS', 'JAVASCRIPT','c++' ],
+      typeSpeed: 40,
+      backSpeed:30,    //text delte hone ki speed 
+      backDelay:1000,   //next text start hone se phele delay (ms)
+       loop:true, 
+       
+    
+    });
+  </script>
+     <script src="project.js"></script>
+</body>
+</html>

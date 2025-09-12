@@ -1,0 +1,114 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
+body{
+    background-color:red; 
+}
+main{
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    margin-top:200px; 
+    background-color:red; 
+}
+#h1{
+    text-align:center; 
+      margin-top:50px; 
+      font-size:2.5rem; 
+      color:white; 
+      text-shadow:3px 2px 1px blue; 
+}
+
+.main-container{
+    width:600px; 
+    height:540px; 
+    border-radius:10px; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    flex-direction:column; 
+}
+
+.parrent-btn{
+    width:80%;   
+    height:90%;  
+    display:grid;
+    margin-top:50px; 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px; 
+    
+}
+.box{
+    border-radius: 25px;
+    border:none; 
+    box-shadow:8px 3px 5px black;
+    color:white;  
+    font-size:1.5rem; 
+    transition-property: all;
+    transition-duration:1s; 
+    transition-timing-function:linear; 
+
+
+}
+.box:active{
+    background-color:blue; 
+    color:white; 
+}
+.reset-btn{
+    padding:1rem; 
+    font-size:1.25rem; 
+    background-color:#191913; 
+    color:white; 
+    border-radius:1rem; 
+    border:none; 
+    margin-top:40px; 
+}
+header{
+    height:40px; 
+    width:100vw; 
+    background-color:black; 
+    color:white; 
+    justify-content:center;
+    align-items:center;  
+    font-size:2rem; 
+    border-none; 
+}
+header  ul{
+    list-style: none;
+    margin-left:40px; 
+}
+
+.new-game{
+      padding:1rem; 
+    font-size:1.25rem; 
+    background-color:#191913; 
+    color:white; 
+    border-radius:1rem; 
+    border:none; 
+    margin-top:40px; 
+
+}
+
+.congratulation{
+      padding:1rem; 
+    font-size:1.25rem; 
+    background-color:#191913; 
+    color:white; 
+    border-radius:1rem; 
+    border:none; 
+    margin-top:40px; 
+    display:none; 
+    position:relative; 
+    top:200px; 
+    transition-property:all; 
+    transition-duration:4s; 
+    transition-delay:0.3s; 
+    transition-timing-function: ease-in;
+}
+.congratulation:hover{
+    transform:rotate(360deg); 
+    background-color:green; 
+}

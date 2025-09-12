@@ -1,0 +1,228 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+}
+body{
+    background-color:rgb(0,0,33); 
+    color:white; 
+}
+
+#navbar{
+    display:flex; 
+    justify-content:space-around; 
+    align-items:center; 
+    height:90px; 
+    background-color:rgb(18, 18, 82); 
+}
+.logo{
+    font-size:2rem; 
+    font-weight:800;
+    color:white;  
+}
+
+.foritems ul{
+    display:flex; 
+    justify-content: space-evenly;
+    align-items:center; 
+    position:relative; 
+    left:400px; 
+
+}
+/* jab width 1550px se below ajaye  */
+
+@media (max-width:1550px){
+    #navbar{
+        flex-direction:column; 
+        height:140px; 
+        width:100%; 
+    }
+    .foritems{
+        margin-top:0px; 
+        margin-right:800px; 
+    }
+    .logo{
+        color:yellow; 
+        margin-top:30px; 
+    }
+    
+        
+    }
+   
+.foritems ul li{
+    list-style: none;
+    margin-left:25px; 
+    font-size:1.5rem;  
+    font-weight:600; 
+}
+ul li a{
+    text-decoration:none; 
+    color:white; 
+    position:relative; 
+}
+ul li a:after{
+    content:""; 
+    position:absolute; 
+    bottom:-5px; 
+    left:0px;
+    height:2px; 
+    width:0px; 
+    background-color:yellow; 
+    transition-property:all;
+    transition-duration:0.3s; 
+    transition-timing-function: linear;
+
+}
+ul li a:hover::after{
+width:100%; 
+}
+
+
+.colorChanger{
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    position:relative; 
+    left:130px; 
+     
+}
+@media (width>=700px) and(width<=1596px){
+    .colorChanger{
+        position:absolute; 
+        left:20px; 
+        top:100px;  
+    }
+}
+@media(width<700px){
+    .colorChanger{
+        position:absolute; 
+        left:20px; 
+        top:50px; 
+    }
+}
+
+
+.boxes{
+    height:20px; 
+    width:20px; 
+    border-radius:50%; 
+    margin-left:3px; 
+
+}
+#white{
+    background-color:white;
+    border:1px solid black;  
+}
+#bangan{
+    background-color:rgb(0,0,33); 
+    border:1px solid white; 
+
+}
+#yellow{
+    background-color:yellow;  
+    border:1px solid black;  
+}
+
+.first-section{
+display:flex; 
+justify-content:space-between; 
+margin-top:150px; 
+
+}
+.first-section>div{
+    width:30%; 
+}
+.left{
+    margin-left:150px; 
+    font-size:2.5rem; 
+    font-weight:600;
+    padding:5px;  
+    margin-top:50px; 
+}
+
+.right img{
+ background-position: cover;
+ background-repeat: no-repeat;
+ height:300px; 
+ width:300px; 
+border-radius:50%; 
+position:absolute; 
+}
+.rotate{
+    height:301px; 
+    width:301px; 
+    border-radius:50%; 
+    border:8px solid rgb(0,0,33); 
+    border-top:8px solid blue; 
+    position:relative; 
+    animation-name:rotation; 
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite
+
+}
+@keyframes rotation{
+    from{
+        transform:rotate(0deg); 
+    }
+    to {transform:rotate(360deg); }
+}
+
+#horizontal{
+    position: relative;
+    top: 150px;
+    width: 80%;
+    left: 200px;
+    height: 2px;
+    box-shadow:2px 2px 8px blue;  
+}
+#element{
+    color:rgb(177, 14, 177); 
+}
+
+
+.social-btn{
+    position:relative; 
+    top:40px; 
+    right:20px; 
+
+}
+#facebook a{
+    color:white; 
+}
+
+
+
+@media (max-width:700px){
+    .first-section{
+        flex-direction:column; 
+        align-items:center; 
+        justify-content:center; 
+    }
+    .left{
+       position:absolute; 
+       top:500px; 
+       width:250px; 
+       height:300px; 
+       margin-top:200px;
+       margin-right:200px;  
+
+    }
+    .left .text{
+        width:250px; 
+    }
+    .right{
+    margin-bottom:200px; 
+    margin-right:150px; 
+    }
+    #horizontal{
+       position:absolute; 
+       top:1150px; 
+       left:60px; 
+    }
+    .social-btn{
+        position:relative; 
+        top:100px; 
+        right:100px; 
+    }
+}
