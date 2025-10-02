@@ -9,7 +9,7 @@ body{
     align-items:center; 
     height:100vh; 
     width:100vw; 
-    background-color:skyblue;
+    background-color:#090979
 }
 .main-container{
     display:flex; 
@@ -19,6 +19,7 @@ body{
     background-color:black; 
     height:500px; 
     border-radius:20px;  
+    border:2px solid white; 
 
 }
 
@@ -43,11 +44,24 @@ body{
     color:white; 
     font-size:1.5rem; 
     text-align:center; 
+    border:2px solid white; 
 
 }
+/* by hover ye effect hoga */
+
+.boxes:hover{
+    background-color:#FF9A00; 
+    border:2px solid #FDBB2D; 
+}
+
 #Ac{
     background-color:#FF9A00; 
 }
+/* es per hover karne se ye effect hoga */
+
+
+
+
 #DEL{
     background-color:#FF9A00; 
 }
