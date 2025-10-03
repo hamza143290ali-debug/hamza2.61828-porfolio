@@ -9,7 +9,7 @@ body{
     align-items:center; 
     height:100vh; 
     width:100vw; 
-    background:url("./shadow.jpg"); 
+    background:url("./waterfall.jpg"); 
     background-repeat:no-repeat;
     background-position:center; 
     background-size:cover; 
@@ -44,7 +44,7 @@ body{
     margin:5px; 
     border-radius:50%; 
     border:none; 
-    background-color:#4F200D; 
+    background-color:rgba(0, 0, 0, 0.113); 
     color:white; 
     font-size:1.5rem; 
     text-align:center; 
